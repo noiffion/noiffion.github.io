@@ -3,13 +3,14 @@
 
 <head>
   <title>Chat</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="./public/styles/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="./public/scripts/script.js"></script>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <meta name="theme-color" content="#228B22">
   <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./public/images/apple-touch-icon.png">
 </head>
 
 <body>
@@ -26,12 +27,8 @@
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
         navigator.serviceWorker.register('service-worker.js')
-          .then(reg => {
-            console.log('Service worker registered! 😎', reg);
-          })
-          .catch(err => {
-            console.log('😥 Service worker registration failed: ', err);
-          });
+          .then(reg => console.log('Service worker registered! 😎', reg))
+          .catch(err => console.log('😥 Service worker registration failed: ', err));
       });
     }
     </script>

@@ -1,0 +1,10 @@
+{
+  "name": "Quote & Chat App",
+  "short_name": "Chat App",
+  "lang": "en-US",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#228B22",
+  "background_color": "#228B22",
+  "icons": []
+}
