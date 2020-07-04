@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  background-image: linear-gradient(90deg, forestgreen, lightgoldenrodyellow);
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.messages-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 86vh;
+  overflow: hidden;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+  background-color: white;
+  min-height: 11vh;
+}
+
+.input-text {
+  font-size: 1.2rem;
+  align-self: flex-start;
+  height: 7vh;
+  width: 80vw;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  padding: 1%;
+  margin: auto;
+}
+
+.input-text:focus {
+ outline:0;
+}
+
+
+.message {
+  visibility: hidden;
+  max-width: 60vw;
+  transition: visibility 1s;
+  transition-delay: 1s;
+  transition-timing-function: linear;
+}
+
+.message-text {
+  font-size: 1.4rem;
+}
+
+.message-time {
+  margin-top: 1vh;
+  font-style: italic;
+  color: darkslategray;
+  font-size: 0.7rem;
+}
+
+.right {
+  align-self: flex-end;
+  font-family: 'Indie Flower', cursive;
+  background-color: lightcoral;
+  border-radius: 5px;
+  margin: 1%;
+  padding: 1%;
+}
+
+.left {
+  align-self: flex-start;
+  font-family: 'Caveat', cursive;
+  background-color: lavender;
+  border-radius: 5px;
+  margin: 1%;
+  padding: 1%;
+}
+
+.send-button {
+  display: inline-block;
+  align-self: flex-end;
+  min-width: 14vw;
+  min-height: 7vh;
+  border-radius: 5px;
+  background-color: forestgreen;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: auto;
+}
+
+.send-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.send-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.send-button:focus {
+  outline: 0;
+}
+
+.send-button:hover span {
+  padding-right: 25px;
+}
+
+.send-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .send-button {
+    font-size: 0.8rem;
+    height: 7vh;
+    min-width: 18vw;
+    padding: 10px;
+  }
+
+  .send-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+  }
+
+  .send-button:hover span {
+    padding-right: 15px;
+  }
+
+  .input-text {
+    max-width: 75vw;
+  }
+
+}
