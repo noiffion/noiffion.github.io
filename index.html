@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title>Chat</title>
-  <link rel="stylesheet" type="text/css" href="./public/styles/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./public/scripts/script.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="./public/images/apple-touch-icon.png">
-  <link rel="manifest" href="manifest.json">
+  <head>
+    <title>Chat</title>
+    <link rel="stylesheet" type="text/css" href="./public/styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./public/scripts/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./public/images/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
 
-  <meta name="description" content="Quote & Chatt app">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#228B22">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="Space Missions">
-  <meta name="apple-mobile-web-app-title" content="Space Missions">
-  <meta name="theme-color" content="#FF9800">
-  <meta name="msapplication-navbutton-color" content="#FF9800">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="msapplication-starturl" content="/index.html">
+    <meta name="description" content="Quote & Chatt app">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#228B22">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Space Missions">
+    <meta name="apple-mobile-web-app-title" content="Space Missions">
+    <meta name="theme-color" content="#FF9800">
+    <meta name="msapplication-navbutton-color" content="#FF9800">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/index.html">
 
-  <link rel="icon" sizes="168x168" href="/public/images/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="168x168" href="/public/images/apple-touch-icon.png">
-  <link rel="icon" sizes="192x192" href="/public/images/apple-touch-icon_192.png">
-  <link rel="apple-touch-icon" sizes="192x192" href="/public/images/apple-touch-icon_192.png">
-  <link rel="icon" sizes="512x512" href="/public/images/apple-touch-icon_512.png">
-  <link rel="apple-touch-icon" sizes="512x512" href="/public/images/apple-touch-icon_512.png">
-</head>
+    <link rel="icon" sizes="168x168" href="/public/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="168x168" href="/public/images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="/public/images/apple-touch-icon_192.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="/public/images/apple-touch-icon_192.png">
+    <link rel="icon" sizes="512x512" href="/public/images/apple-touch-icon_512.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="/public/images/apple-touch-icon_512.png">
+  </head>
 
-<body>
-  <div class="container">
-    <div class="messages-container">
+  <body>
+    <div class="container">
+      <div class="messages-container">
+      </div>
+      <form id="msg-form" class="input-container">
+        <label for="text" id="text-label">Text</label>
+        <input class="input-text" id="text" placeholder="type a message">
+        <button type="submit" value="send" class="send-button"><span>send</span></button>
+      </form>
     </div>
-    <form id="msg-form" class="input-container">
-      <label for="text" id="text-label">Text</label>
-      <input class="input-text" id="text" placeholder="type a message">
-      <button type="submit" value="send" class="send-button"><span>send</span></button>
-    </form>
-  </div>
 
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(reg => console.log('Service worker registered! 😎', reg))
-          .catch(err => console.log('😥 Service worker registration failed: ', err));
-      });
-    }
-    </script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('service-worker.js')
+            .then(reg => console.log('Service worker registered! 😎', reg))
+            .catch(err => console.log('😥 Service worker registration failed: ', err));
+        });
+      }
+      </script>
 
-</body>
+  </body>
 
 </html>
