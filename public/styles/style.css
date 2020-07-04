@@ -135,7 +135,7 @@ body {
 }
 
 #text-label {
-  visibility: hidden;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
