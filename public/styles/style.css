@@ -134,6 +134,10 @@ body {
   right: 0;
 }
 
+#text-label {
+  visibility: hidden;
+}
+
 @media only screen and (max-width: 600px) {
 
   .send-button {
