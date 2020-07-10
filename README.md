@@ -1,7 +1,5 @@
 # Chat Client
 
-In a few weeks you’re going to be senior students… so it’s time to exit the walled garden of prepared exercises. For this project you have an empty repo and need to build everything yourself.
-
 Make a chat client that loads in the browser, and looks like a typical message app. These are the requirements:
 
 - The UI is divided in 3 parts. On the left side there are messages from other users. On the right side there are messages you wrote. On the bottom there’s an input with a button to send new messages.
